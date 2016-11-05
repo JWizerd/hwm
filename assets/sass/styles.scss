@@ -1,0 +1,429 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700';
+@import "compass";
+
+/* Navigation: Simple cmd+f and enter section title (i.e GENERAL) to jump to section you would like to edit.
+
+- GENERAL
+- HEADER
+  - header navigation
+- HERO
+- ABOUT
+- EVENTS
+  - google calendar
+- SERMONS
+  - soundcloud media player
+= CONTACT
+  - form
+= DONATE
+= MEDIA QUERIES
+*/
+
+/* ====================
+GENERAL: default styles, typography and reusable css classes
+==================== */
+
+$cloudy: #f9f9f9;
+$rosey: #c71a00;
+$smokey: #3e3e3e;
+$sky: #4267b2;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 20px "Droid Serif", serif;
+  background-color: $cloudy;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  padding: 25px 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+strong {
+  display: block;
+}
+
+p {
+  font-size: 1em;
+  line-height: 28px;
+}
+
+a {
+  -webkit-transition: ease .3s;
+  -moz-transition: ease .3s;
+  transition: ease .3s;
+}
+
+small {
+  font-size: .7em;
+  text-align: left;
+}
+
+a:hover {
+  -webkit-transition: ease-out .3s;
+  -moz-transition: ease-out .3s;
+  transition: ease-out .3s;
+  color: #c71a00;
+  text-decoration: none;
+}
+
+a:visited, a:focus {
+  text-decoration: none;
+}
+
+.shadow-text {
+  -webkit-text-shadow: 1px 1px 5px #333;
+  -moz-text-shadow: 1px 1px 5px #333;
+  text-shadow: 1px 1px 5px #333;
+}
+
+.overide-container-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.rosey {
+  color: $rosey;
+}
+
+/* ====================
+HEADER
+==================== */
+
+header {
+  background: url('../img/bg-header.jpg') center 80% no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+/* header navigation */
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: $cloudy;
+}
+
+/* ====================
+HERO: healing way ministry title and scipture
+==================== */
+
+#hero {
+  text-align: center;
+}
+
+.site-title {
+  font-size: 3.5em;
+}
+
+/* ====================
+ABOUT
+==================== */
+
+#about {
+  background: url('../img/bg-cross.jpg') center 80% no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: $cloudy;
+  text-align: center;
+}
+
+.address {
+  margin-bottom: 20px;
+}
+
+.services {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.general-info {
+  padding: 25px;
+  border: 3px solid #fff;
+}
+
+/* ====================
+EVENTS
+==================== */
+
+#events {
+  background-color: $sky;
+  color: $cloudy;
+  text-align: center;
+}
+
+.event {
+  list-style: none;
+}
+
+.event-title {
+  margin-bottom: 5px;
+}
+
+.events-section-desc {
+  width: 80%;
+  margin: 0 auto 40px auto;
+}
+
+.event-description {
+  text-align: center;
+}
+
+/* ====================
+SERMONS
+==================== */
+
+#sermons {
+  background: url('../img/bg-sermons-woman.jpg') no-repeat;
+  background-position: 70% center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  color: $cloudy;
+  text-align: center;
+}
+
+#sermons h2, #sermons h3 , #sermons span{
+  color: $smokey;
+}
+
+#sermons iframe {
+  width: 50%;
+  height: 350px;
+}
+
+/* ====================
+CONTACT
+==================== */
+
+#contact {
+  background: url('../img/bg-prayer.jpg') center 80% no-repeat;
+  background-size: cover;
+  color: $cloudy;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*
+ form
+*/
+
+input[type="submit"] {
+  width: 165px;
+  background-color: #c8932f;
+  color: $cloudy;
+  font-weight: 700;
+  -webkit-transition: ease-out .3s;
+  -moz-transition: ease-out .3s;
+  transition: ease-out .3s;
+  border:none;
+}
+
+input[type="submit"]:hover {
+  -webkit-transition: ease .3s;
+  -moz-transition: ease .3s;
+  transition: ease .3s;
+  background-color: $sky;
+}
+
+input, textarea {
+  width: 100%;
+  border: 3px solid #c8932f;
+  padding: 15px;
+  color: $smokey;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* ====================
+DONATE
+==================== */
+
+footer {
+  background-color: #c8932f;
+}
+
+#donate {
+  color: $cloudy;
+  text-align: center;
+  position: relative;
+}
+
+#donate p {
+  margin: 80px 20px;
+}
+
+.btn-donate {
+  background-color: $sky;
+  padding: 26px 0;
+  display: block;
+  font-size: 30px;
+  color: $cloudy;
+  width: 59%;
+  margin: 90px auto 0 auto;
+  -webkit-transition: ease-out .3s;
+  -moz-transition: ease-out .3s;
+  transition: ease-out .3s;
+}
+
+.btn-donate:hover {
+  color: $cloudy;
+  background-color: $rosey;
+  -webkit-transition: ease .3s;
+  -moz-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.donate p {
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  padding: 15px 10px;
+  background-color: #222;
+}
+
+.copy {
+  display: block;
+  color: $cloudy;
+  float: left;
+}
+
+.social-icons {
+  float:right;
+  margin-bottom: 0;
+}
+
+.social-icon {
+  list-style: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+
+/* ====================
+MEDIA QUERIES
+==================== */
+
+@media screen and (min-width: 1500px) {
+  header {
+    height: 700px;
+    max-height: 700px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1299px) {
+  header {
+    height: 600px;
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .site-title {
+    font-size: 3em;
+  }
+  .btn-donate {
+    font-size: 25px;
+  }
+  #sermons iframe {
+    width: 70%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event {
+    margin-bottom: 30px;
+  }
+  .event-description {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .site-title {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  #about {
+    background-position: left 40% center;
+  }
+  #sermons iframe {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  .site-title {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: .9em;
+  }
+  p {
+    font-size: .7em;
+  }
+  #sermons iframe {
+    width: 90%;
+    height: 350px;
+  }
+}
