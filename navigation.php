@@ -1,3 +1,4 @@
+<?php $facebook_link = get_field('facebook_link'); ?>
 <nav>
   <ul>
     <li>
@@ -16,7 +17,7 @@
       <a href="#contact" class="shadow-text">Donate</a>
     </li>
     <li>
-      <a href="https://www.facebook.com/HealingWayMinistry/" class="shadow-text"><i class="fa fa-facebook-square"></i> Facebook</a>
+      <a target="_blank" href="<?php echo $facebook_link; ?>" class="shadow-text"><i class="fa fa-facebook-square"></i> Facebook</a>
     </li>
   </ul>
 </nav>

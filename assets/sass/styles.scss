@@ -191,6 +191,17 @@ EVENTS
 
 .event {
   list-style: none;
+  margin-top: 30px;
+  height: 270px;
+  overflow-y: auto;
+  background-color: #36538e;
+  padding: 10px;
+  border-right: 5px solid $sky;
+  box-sizing: border-box;
+}
+
+.event:last-child {
+  border-right: none;
 }
 
 .event-title {
@@ -199,7 +210,7 @@ EVENTS
 
 .events-section-desc {
   width: 80%;
-  margin: 0 auto 40px auto;
+  margin: 0 auto;
 }
 
 .event-description {
@@ -376,13 +387,13 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 768px) {
-  .event {
-    margin-bottom: 30px;
-  }
   .event-description {
     width: 80%;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
+  }
+  .event {
+    border-right: none;
   }
 }
 

@@ -7,7 +7,6 @@
   <?php get_template_part('home/events'); ?>
   <?php get_template_part('home/sermons'); ?>
 
-
 </main>
 
 <?php get_footer(); ?>
