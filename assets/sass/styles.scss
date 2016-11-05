@@ -109,6 +109,30 @@ a:visited, a:focus {
   color: $rosey;
 }
 
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  visibility: hidden;
+  display: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.back-to-top i {
+  font-size: 50px;
+}
+
+.arrow-is-visible {
+  visibility: visible;
+}
+
 /* ====================
 HEADER
 ==================== */
