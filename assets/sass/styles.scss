@@ -184,23 +184,23 @@ EVENTS
 ==================== */
 
 #events {
-  background-color: $sky;
+  background-color: #c8932f;
   color: $cloudy;
   text-align: center;
 }
 
 .event {
   list-style: none;
-  margin-top: 30px;
+  margin-top: 5px;
   height: 270px;
   overflow-y: auto;
-  background-color: #36538e;
+  background-color: #aa7d29;
   padding: 10px;
-  border-right: 5px solid $sky;
+  border-right: 5px solid #c8932f;
   box-sizing: border-box;
 }
 
-.event:last-child {
+.event:nth-child(2n) {
   border-right: none;
 }
 
@@ -210,7 +210,7 @@ EVENTS
 
 .events-section-desc {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 25px auto;
 }
 
 .event-description {
@@ -391,9 +391,11 @@ MEDIA QUERIES
     width: 80%;
     display: block;
     margin: 30px auto 0 auto;
+    line-height: 30px;
   }
   .event {
     border-right: none;
+    height: auto;
   }
 }
 
