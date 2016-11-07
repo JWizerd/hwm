@@ -63,21 +63,3 @@ function create_events_post_type() {
     )
   );
 }
-
-// custom post type
-add_action('init', 'create_sermons_post_type');
-function create_sermons_post_type() {
-  register_post_type(
-    'sermons',
-    array(
-      'labels'      => array(
-        'name'          => __('Sermons'),
-        'singular_name' => __('Sermon')
-      ),
-      'public'      => true,
-      'has_archive' => true,
-      'taxonomies'  => array('category', 'post_tag'),
-      'supports'    => array('title', 'custom-fields')
-    )
-  );
-}

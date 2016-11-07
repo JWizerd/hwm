@@ -255,6 +255,30 @@ SERMONS
   text-align: center;
 }
 
+.wp-playlist-light {
+  background: rgba(255,255,255, .6) !important;
+  color: $smokey !important;
+}
+
+.wp-playlist .wp-playlist-current-item img {
+  display: none;
+}
+
+.wp-playlist-caption {
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+.wp-playlist-item-meta {
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+}
+.wp-playlist-item-title {
+  font-family: "Droid Serif", serif !important;
+}
+.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
+  background: #333 !important;
+}
 /* ====================
 CONTACT
 ==================== */

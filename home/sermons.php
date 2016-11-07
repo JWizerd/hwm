@@ -13,7 +13,11 @@
         <p>
           <?php echo $sermons_listen_directions; ?>
         </p>
-        <?php echo do_shortcode('[playlist tracks="stuff.mp3, udulessig.mp3, Maria.mp3" style="nopopoutbutton"]'); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php the_content(); ?>
+        <?php endwhile; else : ?>
+          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
       </div>
     </div>
   </div>
