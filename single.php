@@ -23,7 +23,13 @@ $event_description = get_field('event_description');
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <h2><?php echo $event_title; ?></h2>
           <h3><?php echo $event_date; ?></h3>
-          <p><?php the_field('long_event_description'); ?></p>
+            <?php
+              if (empty(get_field('long_event_description'))) :
+                 echo '<p>' . $event_description . '</p>';
+              else :
+                the_field('long_event_description');
+              endif;
+            ?>
       <?php endwhile; endif; ?>
       <h3 class="footer-events-title">Other Upcoming Events</h3>
       <?php get_template_part('single/events_footer_loop'); ?>
