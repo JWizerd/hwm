@@ -25,6 +25,8 @@ $event_description = get_field('event_description');
           <h3><?php echo $event_date; ?></h3>
           <p><?php the_field('long_event_description'); ?></p>
       <?php endwhile; endif; ?>
+      <h3 class="footer-events-title">Other Upcoming Events</h3>
+      <?php get_template_part('single/events_footer_loop'); ?>
     </div>
   </div>
 </main>
