@@ -8,7 +8,7 @@
   <?php wp_head(); ?>
 
 </head>
-<body>
+<body class="events">
   <header class="container-fluid">
   <div class="row">
     <?php get_template_part('navigation'); ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="container-fluid overide-container-padding">
+<main class="container-fluid overide-container-padding bg-cloudy">
 
   <?php get_template_part('home/hero'); ?>
   <?php get_template_part('home/about'); ?>

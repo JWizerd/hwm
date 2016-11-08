@@ -21,8 +21,9 @@ $event_description = get_field('event_description');
       <h2><a href="<?php echo home_url(); ?>"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Go Back</a></h2>
       <hr>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <h2><?php the_title(); ?></h2>
-          <?php the_content(); ?>
+          <h2><?php echo $event_title; ?></h2>
+          <h3><?php echo $event_date; ?></h3>
+          <p><?php the_field('long_event_description'); ?></p>
       <?php endwhile; endif; ?>
     </div>
   </div>

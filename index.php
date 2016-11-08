@@ -1,1 +1,9 @@
-<?php get_template_part('home/layout'); ?>
+<!-- silence is golden. -->
+<?php get_header();
+if (have_posts()) :
+   while (have_posts()) :
+      the_post();
+         the_content();
+   endwhile;
+endif;
+get_footer(); ?>

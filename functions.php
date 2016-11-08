@@ -48,7 +48,6 @@ add_action('wp_enqueue_scripts', 'theme_js' );
 
 
 // custom post type
-add_action('init', 'create_events_post_type');
 function create_events_post_type() {
   register_post_type(
     'events',
@@ -59,7 +58,8 @@ function create_events_post_type() {
       ),
       'public'      => true,
       'has_archive' => true,
-      'supports'    => array('title', 'custom-fields')
+      'supports'    => array('title', 'page-attributes', 'editor', 'custom-fields', 'thumbnail')
     )
   );
 }
+add_action('init', 'create_events_post_type');

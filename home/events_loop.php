@@ -16,7 +16,9 @@ if ( $event_query->have_posts() ) {
     echo '<li class="col-sm-6 event">' .
          '<h3 class="event-title">' . get_the_title() . '</h3>' .
          '<p>Date: ' . get_field('event_date') .'</p>' .
-         '<small class="event-description">' . get_field('event_description') .'</small>' .
+         '<small class="event-description">' . substr(get_field('event_description'), 0, 200) .'</small>';
+
+		echo '<a href="'. get_permalink() .'" class="btn btn-primary btn-events">View Details</a>' .
          '</li>';
   }
   echo '</ul>';

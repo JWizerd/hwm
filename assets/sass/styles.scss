@@ -133,6 +133,10 @@ a:visited, a:focus {
   visibility: visible;
 }
 
+.bg-cloudy {
+  background-color: $cloudy;
+}
+
 /* ====================
 HEADER
 ==================== */
@@ -392,6 +396,34 @@ footer {
   display: inline-block;
   padding-left: 10px;
 }
+
+/* ====================
+EVENTS PAGE
+==================== */
+body {
+  min-height: 100%;
+  background-color: #c8932f;
+}
+.events-wrapper {
+  padding: 60px 20px;
+  background-color: #c8932f;
+  background-size: cover;
+}
+
+.events-single {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: $cloudy;
+  border-radius: 3px;
+}
+
+.btn-events {
+  display: block;
+  width: 150px;
+  margin: 30px auto 0 auto;
+}
+
+
 
 
 /* ====================
