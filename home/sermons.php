@@ -2,6 +2,8 @@
   $sermons_title = get_field('sermons_title');
   $sermons_call_to_action = get_field('sermons_call_to_action');
   $sermons_listen_directions = get_field('sermons_listen_directions');
+  $youtube_link_text = get_field('youtube_link_text');
+  $youtube_link = get_field('youtube_link');
 ?>
 
 <section id="sermons">
@@ -18,6 +20,8 @@
         <?php endwhile; else : ?>
           <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
+        <p class="lead"><a class="youtube-link" href="<?php echo $youtube_link; ?>
+        "><?php echo $youtube_link_text; ?><strong><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</strong></a></p>
       </div>
     </div>
   </div>
