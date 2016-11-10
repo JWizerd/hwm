@@ -1,17 +1,34 @@
-<?php $facebook_link = get_field('facebook_link'); ?>
+<?php
+$facebook_link = get_field('facebook_link');
+$navigation_link_title_1 = get_field('navigation_link_title_1');
+$navigation_link_1 = get_field('navigation_link_1');
+
+$navigation_link_title_2 = get_field('navigation_link_title_2');
+$navigation_link_2 = get_field('navigation_link_2');
+
+$navigation_link_title_3 = get_field('navigation_link_title_3');
+$navigation_link_3 = get_field('navigation_link_3');
+
+$navigation_link_title_4 = get_field('navigation_link_title_4');
+$navigation_link_4 = get_field('navigation_link_4');
+
+$navigation_link_title_5 = get_field('navigation_link_title_5');
+$navigation_link_5 = get_field('navigation_link_5');
+
+?>
 <nav>
   <ul>
     <li>
-      <a href="#about" class="shadow-text">About</a>
+      <a href="<?php echo $navigation_link_1; ?>" class="shadow-text"><?php echo $navigation_link_title_1; ?></a>
     </li>
     <li>
-      <a href="#events" class="shadow-text">Events</a>
+      <a href="<?php echo $navigation_link_2; ?>" class="shadow-text"><?php echo $navigation_link_title_2; ?></a>
     </li>
     <li>
-      <a href="#sermons" class="shadow-text">Sermons</a>
+      <a href="<?php echo $navigation_link_3; ?>" class="shadow-text"><?php echo $navigation_link_title_3; ?></a>
     </li>
     <li>
-      <a href="#contact" class="shadow-text">Contact | Donate</a>
+      <a href="<?php echo $navigation_link_4; ?>" class="shadow-text"><?php echo $navigation_link_title_4; ?></a>
     </li>
     <li>
       <a target="_blank" href="<?php echo $facebook_link; ?>" class="shadow-text"><i class="fa fa-facebook-square"></i> Facebook</a>

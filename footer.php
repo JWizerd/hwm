@@ -32,6 +32,7 @@ $donate_link = get_field('donate_link');
 </div>
 <div class="row footer-links">
   <small class="copy">&copy;Copyright <?php echo date('Y'); ?> Healing Way Ministry</small>
+  <small class="copy webmaster"><a href="<?php echo home_url(); ?>/wp-admin/"> Webmaster</a></small>
 </div>
 <a href="#" class="back-to-top" style="display: inline;">
 <i class="fa fa-arrow-circle-up shadow-text"></i>

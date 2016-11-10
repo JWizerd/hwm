@@ -1,3 +1,7 @@
+<?php
+$header_image = get_field('header_image');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,12 @@
 
 </head>
 <body class="events">
-  <header class="container-fluid">
+  <header class="container-fluid" style="
+  background: url('<?php echo $header_image['url'] ?>') center 80% no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  ">
   <div class="row">
     <?php get_template_part('navigation'); ?>
   </div>
