@@ -477,6 +477,14 @@ MEDIA QUERIES
     width: 70%;
     height: 350px;
   }
+  nav ul li a {
+    display: block;
+    margin-right: 0;
+    text-align: left;
+  }
+  nav ul {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -505,16 +513,9 @@ MEDIA QUERIES
   #about {
     background-position: left 40% center;
   }
-  #sermons iframe {
-    width: 80%;
-    height: 350px;
-  }
 }
 
 @media screen and (max-width: 500px) {
-  nav ul {
-    text-align: center;
-  }
 
   nav ul li {
     margin-bottom: 15px;
@@ -531,9 +532,5 @@ MEDIA QUERIES
   }
   p {
     font-size: .7em;
-  }
-  #sermons iframe {
-    width: 90%;
-    height: 350px;
   }
 }
